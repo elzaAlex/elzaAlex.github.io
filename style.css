@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: Segoe UI;
+  background-color: rgb(255, 236, 236);
+}
+
+a {
+  /* text-decoration: none; */
+  color: #000;
+}
+
+ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.row {
+  min-height: 100vh;
+  /* overflow: hidden; */
+}
+
+.row:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title, .social {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+}
+
+.menu {
+  display: auto;
+}
+
+.menu ul {
+  text-align: center;
+  width: 300px;
+  border: 1px solid #000;
+  border-bottom: 0;
+  line-height: 40px; 
+}
+
+.menu ul li {
+  padding: 0;
+  border-bottom: 1px solid #000;
+  overflow: hidden;
+  height: 40px;
+  transition: height .5s;
+}
+
+.menu ul li a:hover {
+  background-color: rgba(0,0,0,.2);
+}
+
+.menu ul li:first-child:hover {
+  height: 120px;
+}
+
+.menu .menuElem {
+  display: block;
+}
+
+.social {
+  justify-content: space-around;
+  width: 100%;
+  height: 150px;
+}
+
+.social img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
+
+.specList {
+  font-size: 40px;
+  padding: 40px 0;
+  padding-bottom: -40px;
+  background: url(speclist.png) no-repeat center center;
+  background-size: 40%;
+}
+
+.specList ul {
+  margin: 0 auto;
+}
+
+.specList ul li {
+  display: flex;
+  justify-content: center;
+}
+
+.specListElem {
+  display: block;
+  text-decoration: none;
+  padding: 0 20px;
+  line-height: 80px;
+  text-shadow: 0 0 5px red;
+}
+
+.specListElem:hover {
+  background-color: rgba(0,0,0,.2);
+}
+
+.dekList ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.dekListElem {
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  overflow: hidden;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 1px 1px 0 #000;
+  transition: box-shadow .1s;
+}
+
+.dekListElem:hover {
+  box-shadow: 0 1px 10px 0 #000;
+}
+
+.dekListElem img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+.size50 {
+  font-size: 50px;
+}
